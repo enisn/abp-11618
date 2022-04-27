@@ -114,8 +114,6 @@ public class TestAppHttpApiHostModule : AbpModule
         Configure<AbpAspNetCoreMvcOptions>(options =>
         {
             options.ConventionalControllers.Create(typeof(TestAppApplicationModule).Assembly);
-            options.ConventionalControllers.Create(typeof(ModuleAApplicationModule).Assembly);
-            options.ConventionalControllers.Create(typeof(ModuleBApplicationModule).Assembly);
         });
     }
 
