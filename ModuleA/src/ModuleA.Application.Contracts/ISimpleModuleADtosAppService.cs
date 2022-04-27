@@ -5,7 +5,7 @@ using Volo.Abp.Application.Services;
 
 namespace ModuleA
 {
-	public interface ISimpleDtosAppService : IApplicationService
+	public interface ISimpleModuleADtosAppService : IApplicationService
 	{
 		Task<Dto1> GetDto1Async();
 

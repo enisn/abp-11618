@@ -4,7 +4,7 @@ using SimpleDtos;
 
 namespace ModuleA;
 
-public class SimpleDtosAppService : ModuleAAppService, ISimpleDtosAppService
+public class SimpleModuleADtosAppService : ModuleAAppService, ISimpleModuleADtosAppService
 {
     public Task<Dto1> GetDto1Async()
     {
