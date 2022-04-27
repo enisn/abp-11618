@@ -28,6 +28,8 @@ using Volo.Abp.Modularity;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.VirtualFileSystem;
+using ModuleB;
+using ModuleA;
 
 namespace TestApp;
 
@@ -112,6 +114,8 @@ public class TestAppHttpApiHostModule : AbpModule
         Configure<AbpAspNetCoreMvcOptions>(options =>
         {
             options.ConventionalControllers.Create(typeof(TestAppApplicationModule).Assembly);
+            options.ConventionalControllers.Create(typeof(ModuleAApplicationModule).Assembly);
+            options.ConventionalControllers.Create(typeof(ModuleBApplicationModule).Assembly);
         });
     }
 
