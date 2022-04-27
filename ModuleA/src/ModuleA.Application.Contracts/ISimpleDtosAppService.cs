@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
 using SimpleDtos;
+using Volo.Abp.Application.Services;
 
 namespace ModuleA
 {
-	public interface ISimpleDtosAppService
+	public interface ISimpleDtosAppService : IApplicationService
 	{
 		Task<Dto1> GetDto1Async();
 
