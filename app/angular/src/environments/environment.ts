@@ -22,5 +22,11 @@ export const environment = {
       url: 'https://localhost:44326',
       rootNamespace: 'TestApp',
     },
+    ModuleA: {
+      rootNamespace: 'ModuleA',
+    },
+    ModuleB: {
+      rootNamespace: 'ModuleB',
+    },
   },
 } as Environment;
