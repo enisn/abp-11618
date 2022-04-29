@@ -12,13 +12,12 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "paths": {
       "@proxy": ["src/app/proxy/index.ts"],
-      "@proxy/*": ["src/app/proxy/*"]
+      "@proxy/*": ["src/app/proxy/*"],
+      "module-a": ["projects/module-a/src/public-api.ts"],
+      "module-b": ["projects/module-b/src/public-api.ts"]
     }
   },
   "angularCompilerOptions": {
